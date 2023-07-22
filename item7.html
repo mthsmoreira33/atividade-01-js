@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const totalEleitores = 30000,
+        votosBrancos = 100,
+        votosNulos = 10,
+        votosValidos = totalEleitores - votosBrancos - votosNulos;
+
+        document.write(`Percentual de votos válidos: ${((votosValidos * 100) / totalEleitores).toFixed(2)}%
+        <br>
+        Percentual de votos brancos: ${((votosBrancos * 100) / totalEleitores).toFixed(2)}%
+        <br>
+        Percentual de votos nulos: ${((votosNulos * 100) / totalEleitores).toFixed(2)}%`);
+
+    </script>
+</body>
+</html>

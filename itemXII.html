@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const date = new Date(),
+        anoAtual = date.getFullYear(),
+        anoNascimento = prompt("Digite seu ano de nascimento completo (yyyy)"),
+        idade = anoAtual - +anoNascimento;
+
+        if (idade >= 16) {
+            console.log("Você poderá votar esse ano.");
+        } else {
+            console.log("Você não poderá votar esse ano.");
+        }
+    </script>
+</body>
+</html>

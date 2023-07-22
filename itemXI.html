@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num = parseInt(prompt("Digite um número: "));
+        const restoDivisao = num % 2;
+
+        switch (restoDivisao) {
+            case 0:
+                console.log("É par");
+                break;
+
+            case 1:
+                console.log("É impar");
+                break;
+
+            default:
+                console.log("Número inválido");
+                break;
+        }
+    </script>
+</body>
+</html>
